@@ -22,8 +22,8 @@ public class FlipKartPojo {
 		/*the resource method should provided with the URI*/
 		WebResource webResource = client
 		   .resource("https://affiliate-api.flipkart.net/affiliate/search/xml?query="+keyWord.replace(' ', '+')+"&resultCount="+n+"");
-		Builder builder=webResource.header("Fk-Affiliate-Id", "nerellasr1");
-		builder.header("Fk-Affiliate-Token", "477834575bd042ebacea1e7a4643d521");
+		Builder builder=webResource.header("Fk-Affiliate-Id", "07091510r");
+		builder.header("Fk-Affiliate-Token", "170d6020e415453d8779a31f091db59d");
 		builder.accept("application/xml");
 		response1=builder.get(ClientResponse.class);
 	}
